@@ -38,7 +38,6 @@ a {
 
 .container--main {
   margin-top: 30px;
-  margin-bottom: 40px;
 }
 
 .container--align-center {
@@ -352,11 +351,13 @@ a {
 
 .main {
   width: 820px;
+  margin-bottom: 40px;
 }
 
 .main-article {
   width: 100%;
   margin-bottom: 20px;
+  background: #fff;
 }
 
 .main-article--horizontal {
@@ -427,11 +428,11 @@ a {
 }
 
 .main-article-image__mask {
-  z-index: -1;
+  z-index: 2;
 }
 
 .main-article-image__photo {
-  z-index: -2;
+  z-index: 1;
 }
 
 .main-article-image__type {
@@ -441,21 +442,32 @@ a {
   font-size: 14px;
   color: #fff;
   text-transform: uppercase;
+  z-index: 9;
 }
 
 .main-article-image-react {
   position: absolute;
   right: 20px;
-  bottom: 20px;
+  bottom: 18px;
   color: #fff;
   font-size: 12px;
   display: flex;
+  z-index: 9;
 }
 
 .main-article-image-react i {
   font-size: 15px;
   margin-right: 4px;
   cursor: pointer;
+}
+
+.main-article--half .main-article-image__type,
+.main-article--half .main-article-image-react,
+.main-article--small .main-article-image__type,
+.main-article--small .main-article-image-react,
+.main-article--horizontal .main-article-image__type,
+.main-article--horizontal .main-article-image-react {
+    bottom: 15px;
 }
 
 .main-article-image-react__comment {
