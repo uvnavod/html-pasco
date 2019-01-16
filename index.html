@@ -617,8 +617,8 @@
       <div class="widget-col">
         <h3>PAGES WIDGET</h3>
         <ul class="widget-col-pages">
-          <li id="widget_menu_home" class="widget-col-pages-item" onclick="open_menu(this);">
-            <div class="widget-col-pages-item__parent">
+          <li class="widget-col-pages-item">
+            <div id="widget_menu_home" class="widget-col-pages-item__parent" onclick="open_menu(this);">
               <label href="">HOME</label><i id="widget_menu_home_x" class="material-icons">add</i>
             </div><!-- .widget-col-pages-item__parent -->
             <ul id="widget_menu_home_child" class="widget-col-pages-item__child">
@@ -633,8 +633,8 @@
               </li>
             </ul><!-- .widget-col-pages-item__child -->
           </li><!-- .widget-col-pages-item -->
-          <li id="widget_menu_page" class="widget-col-pages-item" onclick="open_menu(this);">
-            <div class="widget-col-pages-item__parent">
+          <li class="widget-col-pages-item">
+            <div id="widget_menu_page" class="widget-col-pages-item__parent" onclick="open_menu(this);">
               <label href="">PAGES</label><i id="widget_menu_page_x" class="material-icons">add</i>
             </div><!-- .widget-col-pages-item__parent -->
             <ul id="widget_menu_page_child" class="widget-col-pages-item__child">
@@ -650,19 +650,43 @@
             </ul><!-- .widget-col-pages-item__child -->
           </li><!-- .widget-col-pages-item -->
           <li class="widget-col-pages-item">
-            <div class="widget-col-pages-item__parent">
-              <label href="">PORTFOLIO</label><i class="material-icons">add</i>
+            <div id="widget_menu_portfolio" class="widget-col-pages-item__parent" onclick="open_menu(this);">
+              <label href="">PORTFOLIO</label><i id="widget_menu_portfolio_x" class="material-icons">add</i>
             </div><!-- .widget-col-pages-item__parent -->
+            <ul id="widget_menu_portfolio_child" class="widget-col-pages-item__child">
+              <li>
+                <a href="#">Motor Bike</a>
+              </li>
+              <li>
+                <a href="#">Lamborghini</a>
+              </li>
+            </ul><!-- .widget-col-pages-item__child -->
           </li><!-- .widget-col-pages-item -->
           <li class="widget-col-pages-item">
-            <div class="widget-col-pages-item__parent">
-              <label href="">BLOG</label><i class="material-icons">add</i>
+            <div id="widget_menu_blog" class="widget-col-pages-item__parent" onclick="open_menu(this);">
+              <label href="">BLOG</label><i id="widget_menu_blog_x" class="material-icons">add</i>
             </div><!-- .widget-col-pages-item__parent -->
+            <ul id="widget_menu_blog_child" class="widget-col-pages-item__child">
+              <li>
+                <a href="#">PHP Storm</a>
+              </li>
+              <li>
+                <a href="#">Java Spring</a>
+              </li>
+            </ul><!-- .widget-col-pages-item__child -->
           </li><!-- .widget-col-pages-item -->
           <li class="widget-col-pages-item">
-            <div class="widget-col-pages-item__parent">
-              <label href="">SHOP</label><i class="material-icons">add</i>
+            <div id="widget_menu_shop" class="widget-col-pages-item__parent" onclick="open_menu(this);">
+              <label href="">SHOP</label><i id="widget_menu_shop_x" class="material-icons">add</i>
             </div><!-- .widget-col-pages-item__parent -->
+            <ul id="widget_menu_shop_child" class="widget-col-pages-item__child">
+              <li>
+                <a href="#">iKBC KD87</a>
+              </li>
+              <li>
+                <a href="#">Logitech M185</a>
+              </li>
+            </ul><!-- .widget-col-pages-item__child -->
           </li><!-- .widget-col-pages-item -->
         </ul><!-- .widget-col-pages -->
       </div><!-- .widget-col -->
@@ -842,42 +866,7 @@
       </div><!-- .footer-option -->
     </div><!-- .container -->
   </div><!-- .footer -->
-  <script>
-    function open_menu(element) {
-      var id = element.id;
-      var child = document.getElementById(id + '_child');
-      var x = document.getElementById(id + '_x');
-      if (x.textContent == "add") {
-        child.classList.add("widget-col-pages-item__child--active");
-        x.textContent = "remove";
-      } else {
-        x.textContent = "add";
-        child.classList.remove("widget-col-pages-item__child--active");
-      }
-    }
-
-    function select_tab(number) {
-      if (number == '1') {
-        var thisTab = document.getElementById("sub_tab_recent");
-        // var thisPost = document.getElementById("sub_post_recent)";
-        var otherTab = document.getElementById("sub_tab_popular");
-        // var otherPost = document.getElementById("sub_post_popular");
-      }
-      else {
-        var thisTab = document.getElementById("sub_tab_popular");
-        // var thisPost = document.getElementById("sub_post_popular)";
-        var otherTab = document.getElementById("sub_tab_recent");
-        // var otherPost = document.getElementById("sub_post_recent");
-      }
-
-      if (otherTab.classList.contains("sub-tab-item--active")) {
-        thisTab.classList.add("sub-tab-item--active");
-        // thisPost.classList.add("sub-post-list--active");
-
-        otherTab.classList.remove("sub-tab-item--active");
-        // otherPost.classList.remove("sub-post-list--active");
-      }
-    }
-  </script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
