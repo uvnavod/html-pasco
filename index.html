@@ -15,19 +15,22 @@
       <div class="container container--row container--relative">
         <ul class="banner-top-socials">
           <li>
-            <a href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
           </li>
           <li>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
           </li>
           <li>
-            <a href="#">
-              <i class="fab fa-google-plus-g"></i>
-            </a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-pinterest-p"></i></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-behance"></i></a>
           </li>
         </ul><!-- .banner-top-socials -->
         <div class="banner-top-setting">
@@ -107,7 +110,6 @@
                 <span>Like</span><span>(80)</span>
               </label>
             </div>
-
           </div>
         </div>
       </div>
@@ -137,7 +139,31 @@
   </div><!-- .sort -->
   <div class="container container--row container--main">
     <div class="main">
-
+      <div class="main-article">
+        <div class="main-article-image">
+          <img class="main-article-image__mask" src="images/img_layer_mask.png" alt="layer_mask">
+          <img class="main-article-image__photo" src="images/img_article_large.png" alt="article_large">
+          <i class="material-icons main-article-image__play">play_circle_outline</i>
+          <span class="main-article-image__type">LIFESTYLE</span>
+          <div class="main-article-image-react">
+            <div class="main-article-image-react__comment">
+              <i class="material-icons">forum</i>
+              <span>7</span>
+            </div>
+            <div class="main-article-image-react__favorite">
+              <i class="material-icons">favorite_border</i>
+              <span>15</span>
+            </div>
+          </div><!-- .main-article-image-react -->
+        </div><!-- .main-article-image -->
+        <div class="main-article-detail">
+          <div class="main-article-detail__content">
+            <h3>10 Things To Do To Change Your Life Forever</h3>
+            <p>The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.</p>
+          </div>
+          <div class="main-article-detail__author">adsfasdf</div>
+        </div>
+      </div>
     </div>
     <div class="sub">
       <div class="sub-search">
@@ -199,25 +225,91 @@
           <i class="fab fa-twitter"></i>
         </li>
       </ul>
-
-      <!-- <ul class="widget-col-socials">
-        <li class="widget-col-socials__icon widget-col-socials__icon--bg-fb">
-          <i class="fab fa-facebook-f"></i>
-        <li class="widget-col-socials__icon widget-col-socials__icon--bg-tw">
-          <i class="fab fa-twitter"></i>
-        </li>
-        <li class="widget-col-socials__icon widget-col-socials__icon--bg-pin">
-          <i class="fab fa-pinterest-p"></i>
-        </li>
-        <li class="widget-col-socials__icon widget-col-socials__icon--bg-ins">
-          <i class="fab fa-instagram"></i>
-        </li>
-        <li class="widget-col-socials__icon widget-col-socials__icon--bg-gg">
-          <i class="fab fa-google-plus-g"></i>
-        </li>
-      </ul> -->
-
-
+      <h3>TAB POST WIDGET</h3>
+      <div class="sub-tab">
+        <div id="sub_tab_recent" class="sub-tab-item sub-tab-item--active" onclick="select_tab('1');">RECENT POST</div>
+        <div id="sub_tab_popular" class="sub-tab-item" onclick="select_tab('2');">POPULAR POST</div>
+      </div>
+      <div class="sub-post">
+        <ul id="sub_post_recent" class="sub-post-list sub-post-list--active">
+          <li class="sub-post-list-element">
+            <img src="images/img_post_1.png" alt="">
+            <div class="sub-post-list-element_detail">
+              <span class="sub-post-list-element_detail__date">April 23, 2018</span>
+              <span class="sub-post-list-element_detail__comment"><i class="material-icons">forum</i> 17</span>
+              <h4>Duis commodo elit sed nisi molestie</h4>
+            </div><!-- .sub-post-list-element_detail -->
+          </li><!-- .sub-post-list-element -->
+          <li class="sub-post-list-element">
+            <img src="images/img_post_2.png" alt="">
+            <div class="sub-post-list-element_detail">
+              <span class="sub-post-list-element_detail__date">April 23, 2018</span>
+              <span class="sub-post-list-element_detail__comment"><i class="material-icons">forum</i> 17</span>
+              <h4>Duis commodo elit sed nisi molestie</h4>
+            </div><!-- .sub-post-list-element_detail -->
+          </li><!-- .sub-post-list-element -->
+          <li class="sub-post-list-element">
+            <img src="images/img_post_3.png" alt="">
+            <div class="sub-post-list-element_detail">
+              <span class="sub-post-list-element_detail__date">April 23, 2018</span>
+              <span class="sub-post-list-element_detail__comment"><i class="material-icons">forum</i> 17</span>
+              <h4>Duis commodo elit sed nisi molestie</h4>
+            </div><!-- .sub-post-list-element_detail -->
+          </li><!-- .sub-post-list-element -->
+          <li class="sub-post-list-element">
+            <img src="images/img_post_4.png" alt="">
+            <div class="sub-post-list-element_detail">
+              <span class="sub-post-list-element_detail__date">April 23, 2018</span>
+              <span class="sub-post-list-element_detail__comment"><i class="material-icons">forum</i> 17</span>
+              <h4>Duis commodo elit sed nisi molestie</h4>
+            </div><!-- .sub-post-list-element_detail -->
+          </li><!-- .sub-post-list-element -->
+        </ul><!-- #sub_post_recent -->
+        <ul id="sub_post_popular" class="sub-post-list">
+          <li class="sub-post-list-element">
+            <img src="images/img_post_4.png" alt="">
+            <div class="sub-post-list-element_detail">
+              <span class="sub-post-list-element_detail__date">April 23, 2018</span>
+              <span class="sub-post-list-element_detail__comment"><i class="material-icons">forum</i> 17</span>
+              <h4>Duis commodo elit sed nisi molestie</h4>
+            </div><!-- .sub-post-list-element_detail -->
+          </li><!-- .sub-post-list-element -->
+          <li class="sub-post-list-element">
+            <img src="images/img_post_3.png" alt="">
+            <div class="sub-post-list-element_detail">
+              <span class="sub-post-list-element_detail__date">April 23, 2018</span>
+              <span class="sub-post-list-element_detail__comment"><i class="material-icons">forum</i> 17</span>
+              <h4>Duis commodo elit sed nisi molestie</h4>
+            </div><!-- .sub-post-list-element_detail -->
+          </li><!-- .sub-post-list-element -->
+          <li class="sub-post-list-element">
+            <img src="images/img_post_2.png" alt="">
+            <div class="sub-post-list-element_detail">
+              <span class="sub-post-list-element_detail__date">April 23, 2018</span>
+              <span class="sub-post-list-element_detail__comment"><i class="material-icons">forum</i> 17</span>
+              <h4>Duis commodo elit sed nisi molestie</h4>
+            </div><!-- .sub-post-list-element_detail -->
+          </li><!-- .sub-post-list-element -->
+          <li class="sub-post-list-element">
+            <img src="images/img_post_1.png" alt="">
+            <div class="sub-post-list-element_detail">
+              <span class="sub-post-list-element_detail__date">April 23, 2018</span>
+              <span class="sub-post-list-element_detail__comment"><i class="material-icons">forum</i> 17</span>
+              <h4>Duis commodo elit sed nisi molestie</h4>
+            </div><!-- .sub-post-list-element_detail -->
+          </li><!-- .sub-post-list-element -->
+        </ul><!-- #sub_post_popular -->
+      </div>
+      <h3>TAGS</h3>
+      <div class="sub-tags">
+        <div>Photography</div>
+        <div>Webdesign</div>
+        <div>Youtube</div>
+        <div>Evanto</div>
+        <div>Art</div>
+        <div>Themeforest</div>
+        <div>Illustration</div>
+      </div>
     </div><!-- .sub -->
   </div>
   <div class="subcribe">
@@ -234,16 +326,27 @@
       <div class="widget-col">
         <h3>PAGES WIDGET</h3>
         <ul class="widget-col-pages">
-          <li class="widget-col-pages-item">
+          <li id="widget_menu_home" class="widget-col-pages-item" onclick="open_menu(this);">
             <div class="widget-col-pages-item__parent">
-              <label href="">HOME</label><i class="material-icons">add</i>
-            </div>
+              <label href="">HOME</label><i id="widget_menu_home_x" class="material-icons">add</i>
+            </div><!-- .widget-col-pages-item__parent -->
+            <ul id="widget_menu_home_child" class="widget-col-pages-item__child">
+              <li>
+                <a href="#">Service</a>
+              </li>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+            </ul><!-- .widget-col-pages-item__child -->
           </li><!-- .widget-col-pages-item -->
-          <li id="demo_1" class="widget-col-pages-item" onclick="open_menu(this);">
+          <li id="widget_menu_page" class="widget-col-pages-item" onclick="open_menu(this);">
             <div class="widget-col-pages-item__parent">
-              <label href="">PAGES</label><i id="demo_1_x" class="material-icons">remove</i>
-            </div>
-            <ul id="demo_1_child" class="widget-col-pages-item__child widget-col-pages-item__child--active">
+              <label href="">PAGES</label><i id="widget_menu_page_x" class="material-icons">add</i>
+            </div><!-- .widget-col-pages-item__parent -->
+            <ul id="widget_menu_page_child" class="widget-col-pages-item__child">
               <li>
                 <a href="#">Service</a>
               </li>
@@ -258,17 +361,17 @@
           <li class="widget-col-pages-item">
             <div class="widget-col-pages-item__parent">
               <label href="">PORTFOLIO</label><i class="material-icons">add</i>
-            </div>
+            </div><!-- .widget-col-pages-item__parent -->
           </li><!-- .widget-col-pages-item -->
           <li class="widget-col-pages-item">
             <div class="widget-col-pages-item__parent">
               <label href="">BLOG</label><i class="material-icons">add</i>
-            </div>
+            </div><!-- .widget-col-pages-item__parent -->
           </li><!-- .widget-col-pages-item -->
           <li class="widget-col-pages-item">
             <div class="widget-col-pages-item__parent">
               <label href="">SHOP</label><i class="material-icons">add</i>
-            </div>
+            </div><!-- .widget-col-pages-item__parent -->
           </li><!-- .widget-col-pages-item -->
         </ul><!-- .widget-col-pages -->
       </div><!-- .widget-col -->
@@ -453,14 +556,35 @@
       var id = element.id;
       var child = document.getElementById(id + '_child');
       var x = document.getElementById(id + '_x');
-
       if (x.textContent == "add") {
-        child.addClass("widget-col-pages-item__child--active");
+        child.classList.add("widget-col-pages-item__child--active");
         x.textContent = "remove";
-      }
-      if (x.textContent == "remove") {
-        child.remove("widget-col-pages-item__child--active");
+      } else {
         x.textContent = "add";
+        child.classList.remove("widget-col-pages-item__child--active");
+      }
+    }
+
+    function select_tab(number) {
+      if (number == '1') {
+        var thisTab = document.getElementById("sub_tab_recent");
+        // var thisPost = document.getElementById("sub_post_recent)";
+        var otherTab = document.getElementById("sub_tab_popular");
+        // var otherPost = document.getElementById("sub_post_popular");
+      }
+      else {
+        var thisTab = document.getElementById("sub_tab_popular");
+        // var thisPost = document.getElementById("sub_post_popular)";
+        var otherTab = document.getElementById("sub_tab_recent");
+        // var otherPost = document.getElementById("sub_post_recent");
+      }
+
+      if (otherTab.classList.contains("sub-tab-item--active")) {
+        thisTab.classList.add("sub-tab-item--active");
+        // thisPost.classList.add("sub-post-list--active");
+
+        otherTab.classList.remove("sub-tab-item--active");
+        // otherPost.classList.remove("sub-post-list--active");
       }
     }
   </script>
